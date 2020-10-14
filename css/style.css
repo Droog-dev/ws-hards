@@ -736,4 +736,67 @@ input {
   opacity: 0.4;
   color: #fff;
 }
+
+.news {
+  padding: 155px 0px 60px;
+}
+
+.news__img {
+  height: 65px;
+  width: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 15px;
+}
+
+.news-block__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 154px;
+}
+
+.news-block__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #30363D;
+  padding: 25px 0 30px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+
+.news-block__item {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 25px;
+}
+
+.item--lr {
+  border: 1px solid #4B5157;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
 /*# sourceMappingURL=style.css.map */
