@@ -1,55 +1,34 @@
 @font-face {
-  font-family: "RobotoSlab-Bold";
-  src: url("RobotoSlab-Bold.woff") format("woff");
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlabBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoSlabBold";
-  src: url("RobotoSlabBold.woff2") format("woff2");
+  font-family: "LatoBlack";
+  src: url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato-Black";
-  src: url("Lato-Black.woff") format("woff"), url("Lato-Black.woff2") format("woff2");
+  font-family: "LatoHeavy";
+  src: url("../fonts/Lato-Heavy.woff") format("woff"), url("../fonts/lato-heavy.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Lato-Heavy";
-  src: url("Lato-Heavy.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "lato-heavy";
-  src: url("lato-heavy.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato-HeavyItalic";
-  src: url("Lato-HeavyItalic.woff") format("woff"), url("Lato-HeavyItalic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Lato-Regular";
-  src: url("Lato-Regular.woff") format("woff");
+  font-family: "LatoHeavyItalic";
+  src: url("../fonts/Lato-HeavyItalic.woff") format("woff"), url("../fonts/Lato-HeavyItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LatoRegular";
-  src: url("LatoRegular.woff2") format("woff2");
+  src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/LatoRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -403,7 +382,7 @@ template {
 }
 
 body {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: 'LatoRegular', sans-serif;
   background-color: #efeff1;
 }
 
@@ -558,6 +537,38 @@ input {
   height: 475px;
 }
 
+.tabs__recommend {
+  display: block;
+  margin: 20px 25px 18px;
+  font-family: LatoRegular;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #262D33;
+}
+
+.tabs-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs-list__item {
+  border: solid 1px #D9DADB;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  padding: 17px 25px 19px;
+  min-height: 99px;
+}
+
+.tabs__menu {
+  width: 263px;
+}
+
 .tabs-wrapper {
   position: absolute;
   top: 30px;
@@ -568,9 +579,161 @@ input {
   background-color: #fff;
   -webkit-border-radius: 10px;
           border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__button {
+  padding: 10px 24px 10px 20px;
+  color: #ffffff;
+  background-color: #4592FF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: none;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tabs__button-text {
+  margin-right: 8px;
 }
 
 .tabs__preview {
-  padding: 55px;
+  padding: 55px 55px 55px 56px;
+  width: 877px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(64, 48, 61, 0.35)), to(rgba(64, 48, 61, 0.35))), url(../img/tab-img.jpg);
+  background: -webkit-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/tab-img.jpg);
+  background: -o-linear-gradient(bottom, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/tab-img.jpg);
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/tab-img.jpg);
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.author-img {
+  height: 45px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.tab-text {
+  font-family: LatoRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.tab-name {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: LatoRegular;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+}
+
+.tab-name--1 {
+  color: #3BBDC4;
+}
+
+.tab-name--2 {
+  color: #6E99AE;
+}
+
+.tab-name--3 {
+  color: #AC8EE3;
+}
+
+.tab-name--4 {
+  color: #FFA34D;
+}
+
+.tab-name--5 {
+  color: #3DC47E;
+}
+
+.tab-title {
+  color: #ffffff;
+  font-family: RobotoSlab;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 50px;
+  max-width: 598px;
+  margin: 20px 0 50px;
+}
+
+.tab-theme {
+  color: #4592FF;
+  text-transform: uppercase;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.tab-author {
+  width: 135px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 143px;
+}
+
+.tab-author__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tab-author__name {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  opacity: 0.85;
+  color: #fff;
+}
+
+.tab-author__prof {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0.4;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
