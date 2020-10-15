@@ -892,6 +892,8 @@ input {
   display: grid;
   -ms-grid-columns: 263px;
       grid-template-columns: 263px;
+  -ms-grid-rows: (170px)[4];
+      grid-template-rows: repeat(4, 170px);
   grid-row-gap: 30px;
 }
 
@@ -928,6 +930,9 @@ input {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background-color: #fff;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row: span 2;
 }
 
 .tags__title {
@@ -978,5 +983,201 @@ input {
           justify-content: space-between;
   width: 190px;
   margin: 0 auto;
+}
+
+.grid-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.news-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (170px)[4];
+      grid-template-rows: repeat(4, 170px);
+  grid-gap: 30px;
+  width: 847px;
+}
+
+.post {
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 25px;
+  background-color: #fff;
+  height: 170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.post__title {
+  font-family: RobotoSlabBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #262D33;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.post__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin: 0;
+}
+
+.post__date {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+
+.news-grid__primary {
+  position: relative;
+  padding: 35px 35px 55px;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.primary__article {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #6E99AE;
+  margin: 0;
+  width: 228px;
+}
+
+.primary__title {
+  font-family: RobotoSlabBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #262D33;
+  margin: 20px 0 25px;
+  width: 228px;
+}
+
+.primary__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+  margin: 0;
+  width: 228px;
+}
+
+.primary__img {
+  position: absolute;
+  right: 0px;
+  top: 16px;
+}
+
+.primary__bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #D9DADB;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 35px;
+}
+
+.primary__comment {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #939699;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.primary__author-img {
+  height: 30px;
+  width: 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.primary__author-name {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262D33;
+}
+
+.primary__author-text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5157;
+}
+
+.comment-img {
+  width: 13.5px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
