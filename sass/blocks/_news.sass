@@ -168,7 +168,7 @@
 .grid-wrapper
   display: flex
   justify-content: space-between
-  margin-top: 25px
+  margin-top: 29px
 .news-grid
   display: grid
   grid-template-columns: repeat(3, 1fr)
@@ -177,7 +177,7 @@
   width: 847px
 .post
   border-radius: 10px
-  padding: 25px
+  padding: 25px 25px 28px
   background-color: #fff
   height: 170px
   width: 100%
@@ -186,12 +186,11 @@
   &__title
     font-family: RobotoSlabBold
     font-style: normal
-    font-weight: bold
+    font-weight: normal
     font-size: 16px
     line-height: 25px
     color: #262D33
     margin: 0
-    margin-bottom: 5px
   &__text
     font-family: Lato
     font-style: normal
@@ -233,7 +232,7 @@
   &__title
     font-family: RobotoSlabBold
     font-style: normal
-    font-weight: bold
+    font-weight: normal
     font-size: 25px
     line-height: 30px
     color: #262D33
@@ -297,3 +296,109 @@
 .comment-img
   width: 13.5px
   margin-right: 5px
+
+.news-grid__popular
+  position: relative
+  padding: 25px
+  grid-row: span 2
+  border-radius: 10px
+  overflow: hidden
+  background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/popular-bg.jpg)
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+.popular
+  &__card
+    position: absolute
+    top: 19px
+    left: 25px
+    border-radius: 3px
+    padding: 5px 12px
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    background-color: #3DC47E
+  &__theme
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #E7D9FF
+  &__title
+    font-family: RobotoSlabBold
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #FFFFFF
+    margin: 23px 0 27px
+  &__author
+    &-avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &-name
+      font-family: Lato
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      mix-blend-mode: normal
+      opacity: 0.85
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    mix-blend-mode: normal
+    opacity: 0.4
+    min-width: 157px
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.news-grid__secondary
+  position: relative
+  grid-column: span 1
+  grid-row: span 2
+  padding-bottom: 95px
+  border-radius: 10px
+  overflow: hidden
+.secondary
+  &__title
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    font-family: RobotoSlabBold
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 25px
+    color: #262D33
+    padding: 15px 51px 30px 25px
+    background-color: #fff
+    margin: 0
+  &__img
+    display: block
+    height: 100%
+    width: 100%
+    object-fit: cover
