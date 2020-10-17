@@ -25,6 +25,12 @@
       border-left: none
       padding: 17px 25px 19px
       min-height: 99px
+      &--active
+        background-color: #F5F5F5
+      &:hover
+        background-color: #F5F5F5
+      &:last-child
+        min-height: 120px
   &__menu
     width: 263px
   &-wrapper
@@ -56,9 +62,31 @@
     background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/tab-img.jpg)
     height: 100%
     background-position: center
-    background-size: 100%
+    background-size: cover
     background-repeat: no-repeat
-
+    display: none
+    &--active
+      display: block
+    &-1
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/js-img.png)
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+    &-2
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/html-img.jpg)
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+    &-3
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/design-img.jpg)
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+    &-4
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/css-img.png)
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
 .author
   &-img
     height: 45px
