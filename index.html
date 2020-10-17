@@ -187,14 +187,14 @@
       </symbol>
     </svg>
     
-    <div class="container">
+    <div class="container container--flex">
       <div class="newsline__block">
         <div class="newsline__item">
           
           <img class="newsline__img" src="img/newsline-img-1.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--blue">Новости</span>
-            <h3 class="newsline__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h3>
+            <h3 class="newsline__title"><a class="newsline__link" href="#">Новый налоговый режим для фрилансеров — налог на проф. доход</a></h3>
             <p class="newsline__text">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
               неофициально. Разобрались, как
               работает режим и кому он подходит, а кому нет.</p>
@@ -210,7 +210,7 @@
           <img class="newsline__img" src="img/newsline-img-2.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--green">Мнения</span>
-            <h3 class="newsline__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h3>
+            <h3 class="newsline__title"><a class="newsline__link" href="#">Платные курсы — это не быстрый способ выйти на нужный уровень</a></h3>
             <p class="newsline__text">Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то это решит все проблемы. Но они не
             берут в расчет, что лучшее обучение — это практика.</p>
             <span class="newsline__info">7 октября<img class="newsline__comment" src="img/comment-dark.svg" alt="">27<img class="newsline__like" src="img/like-dark.svg"
@@ -225,7 +225,7 @@
           <img class="newsline__img" src="img/newsline-img-3.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--red">Горячее</span>
-            <h3 class="newsline__title">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</h3>
+            <h3 class="newsline__title"><a class="newsline__link" href="#">Из-за ограничений стали недоступны серверы Telegram. К чему это может...</a></h3>
             <p class="newsline__text">Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались, чем это грозит вам, если ваш
             бизнес зависит от этого мессенджера.</p>
             <span class="newsline__info">12 декабря<img class="newsline__comment" src="img/comment-dark.svg" alt="">30<img class="newsline__like" src="img/like-dark.svg"
@@ -240,7 +240,7 @@
           <img class="newsline__img" src="img/newsline-img-4.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--green">Мнения</span>
-            <h3 class="newsline__title">В вашем портфолио могут быть фейковые проекты, если вы сделали...</h3>
+            <h3 class="newsline__title"> <a class="newsline__link" href="#">В вашем портфолио могут быть фейковые проекты, если вы сделали...</a></h3>
             <p class="newsline__text">Один из читателей предположил, что если в портфолио положить несуществующий проект, то ничего страшного не произойдет.
             Он провел эксперимент и потенциальные заказчики...</p>
             <span class="newsline__info">20 июля<img class="newsline__comment" src="img/comment-dark.svg" alt="">102<img class="newsline__like" src="img/like-dark.svg"
@@ -255,7 +255,7 @@
           <img class="newsline__img" src="img/newsline-img-5.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--red">Горячее</span>
-            <h3 class="newsline__title">Список стран, куда можно улететь</h3>
+            <h3 class="newsline__title"><a class="newsline__link" href="#">Список стран, куда можно улететь</a></h3>
             <p class="newsline__text">Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала посмотрите на список стран, который
             мы подготовили для вас. Внутри важная информация про...</p>
             <span class="newsline__info">22 октября<img class="newsline__comment" src="img/comment-dark.svg" alt="">5<img class="newsline__like" src="img/like-dark.svg"
@@ -270,7 +270,7 @@
           <img class="newsline__img" src="img/newsline-img-6.png" alt="">
           <div class="newsline__about">
             <span class="newsline__theme newsline__theme--purple">Подборки</span>
-            <h3 class="newsline__title">Список Youtube каналов для тех, кто только начинает изучать разработку</h3>
+            <h3 class="newsline__title"><a class="newsline__link" href="#">Список Youtube каналов для тех, кто только начинает изучать разработку</a></h3>
             <p class="newsline__text">Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные айти. Тут можно найти видеоуроки,
             лекции и бесплатные курсы.</p>
             <span class="newsline__info">26 октября<img class="newsline__comment" src="img/comment-dark.svg" alt="">101<img class="newsline__like" src="img/like-dark.svg"
@@ -282,9 +282,26 @@
         </div>
         <!-- article-item -->
       </div>
-      <aside class="newsline__aside"></aside>
+      <aside class="aside newsline__aside">
+        <h4 class="aside__recent">Недавно опубликовано</h4>
+        <ul class="aside__list">
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-1.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Работа на удаленке, как это теперь</a> <span class="aside__time">15 минут назад</span></div> <span  class="aside__number">1</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-2.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Для чего нужен Node.js и с чем...</a> <span class="aside__time">32 минуты назад</span></div> <span  class="aside__number">2</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-3.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Работа в Google: собеседования и...</a> <span class="aside__time">38 минут назад</span></div> <span  class="aside__number">3</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-4.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Переезд в Нью Йорк для работы по...</a> <span class="aside__time">53 минуты назад</span></div> <span  class="aside__number">4</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-5.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Почему родители против того, чтобы...</a><span class="aside__time">1 час назад</span></div> <span  class="aside__number">5</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-6.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Прокрастинация: побороть отклады...</a> <span class="aside__time">1 час назад</span></div> <span  class="aside__number">6</span></li>
+          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-7.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Правки от заказчика могут быть...</a><span class="aside__time">2 часа назад</span></div> <span class="aside__number"> 7</span></li>
+        </ul>
+        <a class="aside__more" href="">Read more</a>
+      </aside>
     </div>
     <!-- container -->
   </section>
+  <footer class="footer">
+    <div class="container">
+      
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,5 +1,7 @@
 .newsline
   padding: 60px 0 60px
+  &__aside
+    margin-left: auto
   &__about
     display: flex
     flex-direction: column
@@ -48,6 +50,11 @@
     line-height: 25px
     color: #262D33
     margin: 15px 0 11px
+  &__link
+    color: inherit
+    text-decoration: none
+    &:hover
+      text-decoration: underline
   &__theme
     font-family: Lato
     font-style: normal
@@ -78,13 +85,107 @@
     color: #939699
     margin-top: auto
     margin-bottom: 4px
+.container--flex
+  display: flex
+  align-items: flex-start
 .newsline__bookmark
   position: absolute
   display: block
   width: 14px
   height: 18px
   top: 26px
-  right: 0px
+  right: 3px
   fill: #cccccc
   &:hover
     fill: #FF4F52
+
+.aside
+  background-color: #fff
+  border-radius: 10px
+  width: 263px
+  &__list
+    margin: 0
+    padding: 0
+  &__recent
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #262D33
+    text-align: center
+    margin: 0
+    padding: 20px 25px
+    border: 1px solid #D9DADB
+    border-top: none
+    border-right: none
+    border-left: none
+
+  &__item
+    position: relative
+    padding: 17px 0 17px
+    margin: 0 25px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &:not(:last-child)
+      border: 1px solid #D9DADB
+      border-top: none
+      border-right: none
+      border-left: none
+  &__right
+    width: 143px
+    margin-left: auto
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+  &__img
+    width: 60px
+    height: 60px
+    object-fit: cover
+  &__link
+    color: inherit
+    text-decoration: none
+
+  &__time
+    display: block
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    margin-top: 5px
+  &__number
+    position: absolute
+    top: 25px
+    right: 10px
+    font-family: Lato
+    font-size: 70px
+    font-weight: 900
+    font-style: italic
+    line-height: 50px
+    color: #262D33
+    opacity: 0.08
+  &__more
+    display: block
+    font-family: Lato
+    font-style: normal
+    font-weight: 900
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+    text-decoration: none
+    text-align: center
+    // padding: auto
+    border: 1px solid #D9DADB
+    border-bottom: none
+    border-right: none
+    border-left: none
+    padding-top: 11px
+    padding-bottom: 14px
