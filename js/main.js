@@ -8,9 +8,31 @@ $(document).ready(function(){
     $(this).addClass("tabs-list__item--active");
     contentItem.removeClass("tabs__preview--active");
     $(activeContent).addClass("tabs__preview--active");
+    tabsItem.removeClass("tabs-list__item--expanded");
   });
   
-  $(".").on("click", function (event) {
+  function checkWidth() {
+    var windowWidth = $('body').innerWidth(),
+        elem = $(".tabs__recommend");
+    if(windowWidth < 580){
+      elem.addClass('tabs__recommend--mobile')
+    }
+    else{
+      elem.removeClass('tabs__recommend--mobile')
+    }
+  }
 
+  checkWidth(); 
+
+  $(window).resize(function(){
+    checkWidth();
   });
+
+  var recommendItem = $(".tabs__recommend--mobile");
+  var tabsListItem = $(".tabs-list__item");
+
+  recommendItem.on("click", function (event) {
+    tabsListItem.toggleClass("tabs-list__item--expanded");
+  });
+
 });
