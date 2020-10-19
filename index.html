@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>Журнал Universal</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
       <nav class="header__nav">
         <div class="header__logo">
           <a href="./"><img src="img/universal-logo.svg" class="logo-img" alt=""></a>
-          <img src="img/universal.svg" alt="">
+          <a href="./"><img src="img/universal.svg" alt=""></a>
         </div>
         <ul class="menu header__menu">
           <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
@@ -128,13 +130,13 @@
     <div class="container">
       <div class="news-block">
         <ul class="news-block__list">
-          <li class="news-block__item item--lr"><span class="news-block__text"><a class="news-block__link" href="">25 способов <br> настроить слайдер</a></span><img class="news__img" src="img/news-img-1.png" alt="">
-          </li>
-          <li class="news-block__item item--lr"><span class="news-block__text"><a class="news-block__link" href="">Главные фишки фрилансера</a></span><img class="news__img" src="img/news-img-2.png" alt=""></li>
-          <li class="news-block__item item--lr"><span class="news-block__text"><a class="news-block__link" href="">Техника управлеия временем “Помодоро”</a></span><img class="news__img" src="img/news-img-3.png"
-              alt=""></li>
-          <li class="news-block__item"><span class="news-block__text"><a class="news-block__link" href="">Что нужно знать о Git <br> и GitHub</a></span><img class="news__img" src="img/news-img-4.png" alt="">
-          </li>
+          <li class="news-block__item item--lr"><a class="news-block__link" href=""><span class="news-block__text">25 способов <br> настроить слайдер</span><img class="news__img" src="img/news-img-1.png" alt="">
+          </a></li>
+          <li class="news-block__item item--lr"><a class="news-block__link" href=""><span class="news-block__text">Главные фишки фрилансера</span><img class="news__img" src="img/news-img-2.png" alt=""></a></li>
+          <li class="news-block__item item--lr"><a class="news-block__link" href=""><span class="news-block__text">Техника управлеия временем “Помодоро”</span><img class="news__img" src="img/news-img-3.png"
+              alt=""></a></li>
+          <li class="news-block__item"><a class="news-block__link" href=""><span class="news-block__text">Что нужно знать о Git <br> и GitHub</span><img class="news__img" src="img/news-img-4.png" alt="">
+          </a></li>
         </ul>
     </div>
       <div class="grid-wrapper">
@@ -193,8 +195,8 @@
             <span class="download__text">Чек-лист сдачи верстки вашему заказчику</span>
             <span class="download__size">PDF, 125 Мб</span>
             <img class="download__file" src="img/file.svg" alt="Icon: file">
-            <button class="download__button"><img class="download__icon" src="img/download.svg" alt="Icon: download"><span
-                class="download__span">Скачать</span></button>
+            <a download href="download/манул.txt"><button class="download__button"><img class="download__icon" src="img/download.svg" alt="Icon: download"><span
+                class="download__span">Скачать</span></button></a>
           </div>
           <div class="tags sidebar__tags">
             <h4 class="tags__title">теги</h4>
@@ -341,13 +343,13 @@
       <aside class="aside newsline__aside">
         <h4 class="aside__recent">Недавно опубликовано</h4>
         <ul class="aside__list">
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-1.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Работа на удаленке, как это теперь</a> <span class="aside__time">15 минут назад</span></div> <span  class="aside__number">1</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-2.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Для чего нужен Node.js и с чем...</a> <span class="aside__time">32 минуты назад</span></div> <span  class="aside__number">2</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-3.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Работа в Google: собеседования и...</a> <span class="aside__time">38 минут назад</span></div> <span  class="aside__number">3</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-4.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Переезд в Нью Йорк для работы по...</a> <span class="aside__time">53 минуты назад</span></div> <span  class="aside__number">4</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-5.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Почему родители против того, чтобы...</a><span class="aside__time">1 час назад</span></div> <span  class="aside__number">5</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-6.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Прокрастинация: побороть отклады...</a> <span class="aside__time">1 час назад</span></div> <span  class="aside__number">6</span></li>
-          <li class="aside__item"> <img class="aside__img" src="img/newsline-aside-7.png" alt=""> <div class="aside__right"><a class="aside__link" href="#">Правки от заказчика могут быть...</a><span class="aside__time">2 часа назад</span></div> <span class="aside__number"> 7</span></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-1.png" alt=""> <div class="aside__right">Работа на удаленке, как это теперь <span class="aside__time">15 минут назад</span></div> <span  class="aside__number">1</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-2.png" alt=""> <div class="aside__right">Для чего нужен Node.js и с чем... <span class="aside__time">32 минуты назад</span></div> <span  class="aside__number">2</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-3.png" alt=""> <div class="aside__right">Работа в Google: собеседования и... <span class="aside__time">38 минут назад</span></div> <span  class="aside__number">3</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-4.png" alt=""> <div class="aside__right">Переезд в Нью Йорк для работы по... <span class="aside__time">53 минуты назад</span></div> <span  class="aside__number">4</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-5.png" alt=""> <div class="aside__right">Почему родители против того, чтобы...<span class="aside__time">1 час назад</span></div> <span  class="aside__number">5</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-6.png" alt=""> <div class="aside__right">Прокрастинация: побороть отклады... <span class="aside__time">1 час назад</span></div> <span  class="aside__number">6</span></a></li>
+          <li class="aside__item"><a class="aside__link" href="#"> <img class="aside__img" src="img/newsline-aside-7.png" alt=""> <div class="aside__right">Правки от заказчика могут быть...<span class="aside__time">2 часа назад</span></div> <span class="aside__number"> 7</span></a></li>
         </ul>
         <a class="aside__more" href="">Read more</a>
       </aside>
