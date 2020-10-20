@@ -614,6 +614,35 @@ input {
   margin: 30px 0 30px;
 }
 
+.thanks-block {
+  padding: 80px 0;
+}
+
+.newsletter-thanks {
+  font-size: 40px;
+  font-family: RobotoSlabBold;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 40px;
+  color: #262D33;
+  margin-bottom: 60px;
+}
+
+.back-button {
+  background-color: #4592FF;
+  padding: 10px 20px;
+  text-decoration: none;
+  min-width: 154px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
+
 .tabs {
   position: relative;
   background-color: #262D33;
@@ -1027,6 +1056,7 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-decoration: none;
 }
 
 .sidebar {
@@ -1903,10 +1933,10 @@ input {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .newsletter-button {
@@ -2462,6 +2492,11 @@ input {
   display: flex;
 }
 
+.invalid {
+  font-size: 12px;
+  color: #e72b2b;
+}
+
 @media (min-width: 992px) {
   .tabs-list__item:hover {
     cursor: pointer;
@@ -2542,6 +2577,12 @@ input {
   }
   .footer__links-link:hover {
     color: #4592ff;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .slider__button:hover {
+    background-color: #1f7cff;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
@@ -3119,6 +3160,27 @@ input {
   }
   .grid-post {
     grid-column: span 2;
+  }
+  .error-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newsletter-form {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

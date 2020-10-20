@@ -60,10 +60,21 @@ $(document).ready(function(){
   pagination: {
     el: '.swiper-pagination',
   },
+  });
 
-
-  
-})
-
-
+  $(".newsletter-form").validate({
+    errorClass: "invalid",
+    rules: {
+      newsletter_email: {
+        required: true,
+        
+      },
+    },
+    messages: {
+      newsletter_email: {
+        required: "Required field",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
 });
