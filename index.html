@@ -6,6 +6,7 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   <title>Журнал Universal</title>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
           <a href="./"><img src="img/universal-logo.svg" class="logo-img" alt=""></a>
           <a href="./"><img src="img/universal.svg" alt=""></a>
         </div>
-        <ul class="menu header__menu">
+        <ul class="menu header__menu header__menu--hide">
           <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Курсы</a></li>
@@ -25,10 +26,31 @@
           <li class="menu__item"><a href="#" class="menu__link">JavaScript</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Web Design</a></li>
         </ul>
-        <form class="form header__form" action="#">
+        <form class="form header__form header__form--hide" action="#">
           <input class="form__input" type="text" placeholder="Поиск">
           <button class="form__button"><img class="form__img" src="img/search.svg" alt="Icon: search"></button>
         </form>
+        <div class="burger-menu">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </div>
+        <div class="mobile-menu">
+          <form class="form header__form header__form--mobile" action="#">
+            <input class="form__input " type="text" placeholder="Поиск">
+            <button class="form__button"><img class="form__img" src="img/search.svg" alt="Icon: search"></button>
+          </form>
+          <ul class="menu header__menu header__menu--mobile">
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">Статьи</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">Новости</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">Курсы</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">HTML</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">CSS</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">JavaScript</a></li>
+            <li class="menu__item menu__item--mobile"><a href="#" class="menu__link menu__link--mobile">Web Design</a></li>
+          </ul>
+          
+        </div>
       </nav>
     </div>
   </header>
@@ -142,8 +164,8 @@
       <div class="grid-wrapper">
         <div class="news-grid">
           <div class="primary news-grid__primary">
-            <span class="primary__article">Статьи</span>
-            <h3 class="primary__title"><a class="news-grid__link" href="">Вам предложили работу мечты, но вы не можете...</a></h3>
+            <a class="news-grid__link" href=""><span class="primary__article">Статьи</span>
+            <h3 class="primary__title">Вам предложили работу мечты, но вы не можете...</h3>
             <p class="primary__text">Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас семья и переезжать вы не
           готовы.</p>
             <img class="primary__img" src="img/car.png" alt="">
@@ -152,7 +174,7 @@
               <span class="primary__author-name" >Инна Квашова:</span>
               <span class="primary__author-text">Каждый разработчик мечтает переехать в...</span>
               <span class="primary__comment"><img class="comment-img" src="img/comment-dark.svg" alt="">342</span>
-            </span>
+            </span></a>
           </div>
           <!-- primary -->
           <div class="popular news-grid__popular">
@@ -167,7 +189,7 @@
               </div>
             </div>
           </div>
-          <div class="news-grid__secondary"> <img class="secondary__img" src="img/notebook.png" alt=""> <h3 class="secondary__title"><a class="news-grid__link" href="">20+ инструментов для js-разработчика</a></h3></div>
+          <div class="news-grid__secondary"><a class="news-grid__link" href=""> <img class="secondary__img" src="img/notebook.png" alt=""> <h3 class="secondary__title">20+ инструментов для js-разработчика</h3></a></div>
           <div class="post news-grid__post">
             <h4 class="post__title"><a class="news-grid__link" href="">Удачные референсы</a></h4>
             <p class="post__text">Как выбрать подходящие исходники, если вы ищите идею для интерфейса</p> <span
@@ -359,7 +381,76 @@
   <section class="grid">
     <div class="container">
       <div class="grid__news">
-        <div class="grid__slider-window"></div>
+        <div class="slider grid__slider-window">
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slide-1">
+                <!-- <img class="slider__bg" src="img/slider-bg-1.jpg" alt=""> -->
+                <span class="slider__hot">Горячее</span>
+                <div class="slider__author">
+                  <img class="slider__author-photo" src="img/slider-author.png" alt="">
+                  <span class="slider__author-name">Оксана Пушкина</span>
+                  <span class="slider__author-proffesion">Фотограф</span>
+                </div>
+                <h2 class="slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slider__button"><img src="img/Images.svg" alt=""> <span class="slider__button-text">Смотреть фото</span>26</button>
+              </div>
+              <div class="swiper-slide slide-1">
+                <!-- <img class="slider__bg" src="img/slider-bg-1.jpg" alt=""> -->
+                <span class="slider__hot">Горячее</span>
+                <div class="slider__author">
+                  <img class="slider__author-photo" src="img/slider-author.png" alt="">
+                  <span class="slider__author-name">Оксана Пушкина</span>
+                  <span class="slider__author-proffesion">Фотограф</span>
+                </div>
+                <h2 class="slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slider__button"><img src="img/Images.svg" alt=""> <span class="slider__button-text">Смотреть
+                    фото</span>26</button>
+              </div>
+              <div class="swiper-slide slide-1">
+                <!-- <img class="slider__bg" src="img/slider-bg-1.jpg" alt=""> -->
+                <span class="slider__hot">Горячее</span>
+                <div class="slider__author">
+                  <img class="slider__author-photo" src="img/slider-author.png" alt="">
+                  <span class="slider__author-name">Оксана Пушкина</span>
+                  <span class="slider__author-proffesion">Фотограф</span>
+                </div>
+                <h2 class="slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slider__button"><img src="img/Images.svg" alt=""> <span class="slider__button-text">Смотреть
+                    фото</span>26</button>
+              </div>
+              <div class="swiper-slide slide-1">
+                <!-- <img class="slider__bg" src="img/slider-bg-1.jpg" alt=""> -->
+                <span class="slider__hot">Горячее</span>
+                <div class="slider__author">
+                  <img class="slider__author-photo" src="img/slider-author.png" alt="">
+                  <span class="slider__author-name">Оксана Пушкина</span>
+                  <span class="slider__author-proffesion">Фотограф</span>
+                </div>
+                <h2 class="slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slider__button"><img src="img/Images.svg" alt=""> <span class="slider__button-text">Смотреть
+                    фото</span>26</button>
+              </div>
+              <div class="swiper-slide slide-1">
+                <!-- <img class="slider__bg" src="img/slider-bg-1.jpg" alt=""> -->
+                <span class="slider__hot">Горячее</span>
+                <div class="slider__author">
+                  <img class="slider__author-photo" src="img/slider-author.png" alt="">
+                  <span class="slider__author-name">Оксана Пушкина</span>
+                  <span class="slider__author-proffesion">Фотограф</span>
+                </div>
+                <h2 class="slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                <button class="slider__button"><img src="img/Images.svg" alt=""> <span class="slider__button-text">Смотреть
+                    фото</span>26</button>
+              </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div class="grid__questions">
           <div class="grid__questions-text">
             <span class="grid__questions-theme">Карьера</span>
@@ -370,12 +461,12 @@
           <div class="circle"></div>
           <img class="questions__bg" src="img/walk-bg.png" alt="">
         </div>
-        <div class="post">
+        <div class="post grid-post">
           <h4 class="post__title"><a class="news-grid__link" href="">Зарядка для глаз</a></h4>
           <p class="post__text">Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...</p>
           <span class="post__date">15 октября</span>
         </div>
-        <div class="post">
+        <div class="post grid-post">
           <h4 class="post__title"><a class="news-grid__link" href="">Топ плагинов jQuery</a></h4>
           <p class="post__text">Какие плагины помогут быстро создать галерею, выпадающие списки или окна</p>
           <span class="post__date">14 октября</span>
@@ -487,6 +578,7 @@
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
   crossorigin="anonymous">
   </script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

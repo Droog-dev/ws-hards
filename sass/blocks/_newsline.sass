@@ -53,6 +53,18 @@
   &__link
     color: inherit
     text-decoration: none
+    &::after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: transparent
+      z-index: 100
+      background: rgba(0,0,0,0.1)
+      left: 0
+      top: 0
+      opacity: 0
+
   &__theme
     font-family: Lato
     font-style: normal
@@ -94,6 +106,9 @@
   top: 26px
   right: 3px
   fill: #cccccc
+  z-index: 120
+  &--active
+    fill: #FF4F52
 
 .aside
   background-color: #fff

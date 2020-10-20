@@ -35,4 +35,35 @@ $(document).ready(function(){
     tabsListItem.toggleClass("tabs-list__item--expanded");
   });
 
+  var bookmarkRed = $(".newsline__bookmark")
+
+  bookmarkRed.on("click", function (event) {
+    $(this).toggleClass("newsline__bookmark--active");
+  });
+  
+  var burgerMenu = $(".burger-menu")
+  var mobileMenu = $(".mobile-menu")
+  burgerMenu.on("click", function (event) {
+    mobileMenu.toggleClass("mobile-menu--visible");
+  });
+
+  var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+
+  
+})
+
+
 });

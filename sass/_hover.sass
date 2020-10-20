@@ -25,8 +25,8 @@
         transition: 0.2s
   .news-grid
     &__link
-      &:hover
-        text-decoration: underline
+      &:hover::after
+        opacity: 1
   .newsline
     &__link
       &:hover
@@ -37,8 +37,8 @@
         text-decoration: underline
   .newsline__bookmark
     &:hover
-      fill: #FF4F52
-      transition: 0.2s
+      cursor: pointer
+
   .tabs
     &-list
       &__item
