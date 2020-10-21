@@ -53,13 +53,23 @@ $(document).ready(function(){
   loop: true,
   autoplay: {
         delay: 3000,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       },
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
+  });
+
+  var myArticleSwiper = new Swiper('.article-swiper', {
+  // Optional parameters
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  direction: 'horizontal',
+  loop: true,
   });
 
   $(".newsletter-form").validate({
